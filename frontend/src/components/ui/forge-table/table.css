@@ -1,0 +1,31 @@
+/* Standalone Table Component Stylesheet */
+
+/* Scrollbar Hiding utility (used for horizontal layouts) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Premium Transitions */
+.transition-all-custom {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Pulse animation adjustments (used for live status dots) */
+@keyframes custom-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .4;
+    transform: scale(1.2);
+  }
+}
+
+.animate-pulse-dot {
+  animation: custom-pulse 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

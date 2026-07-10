@@ -1,0 +1,21 @@
+# OS Files
+.DS_Store
+Thumbs.db
+*.db
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Build and dependencies (handled in subdirectories, but added here for safety)
+**/node_modules/
+**/.next/
+**/build/
+**/.gradle/
+**/*.tsbuildinfo
+next-env.d.ts
